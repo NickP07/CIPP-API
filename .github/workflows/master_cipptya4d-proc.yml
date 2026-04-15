@@ -14,7 +14,7 @@ env:
 
 jobs:
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
       - name: 'Checkout GitHub Action'
@@ -27,4 +27,4 @@ jobs:
           app-name: 'cipptya4d-proc'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2692057DC3E84B9499E55E827F6F07B5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E5D2DBEF9C9C4B698A9B6928C5C55A2C }}
